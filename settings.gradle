@@ -1,0 +1,2 @@
+include ':app', ':linkedinsignin'
+rootProject.name='My Application'
