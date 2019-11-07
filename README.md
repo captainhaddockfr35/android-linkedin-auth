@@ -37,7 +37,6 @@ First of all you need to retrieve Client ID, Client Secret and Redirect Uri from
 
 1. Open your Application Class and add the following
               
-// Java
 
 	Linkedin.initialize(getApplicationContext(),
                 	"LINKEDIN_CLIENT_ID",
@@ -50,9 +49,8 @@ First of all you need to retrieve Client ID, Client Secret and Redirect Uri from
 
 2. To authorize a user for your application: 
           
- // Java
  
-	Linkedin.Companion.login(this, new LinkedinLoginViewResponseListener() {
+	Linkedin.login(this, new LinkedinLoginViewResponseListener() {
           	@Override
           	public void linkedinDidLoggedIn(LinkedinToken linkedinToken) {
               	// Success
